@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* CELO Theme Variables */
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --color-accent: #fbcc5c;
+  --color-accent-hover: #f4c142;
+  --color-border: #333333;
+  --color-muted: #666666;
+  --border-radius: 0px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-bg text-fg;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-black px-6 py-3 font-bold hover:bg-accent-hover transition-all duration-200 shadow-lg hover:shadow-xl;
+    border-radius: var(--border-radius);
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-accent text-accent px-6 py-3 font-bold hover:bg-accent hover:text-black transition-all duration-200;
+    border-radius: var(--border-radius);
+  }
+  
+  .card {
+    @apply bg-bg border-2 border-border p-6 shadow-lg;
+    border-radius: var(--border-radius);
+  }
+  
+  .counter-display {
+    @apply text-6xl font-bold text-accent mb-8 font-mono;
+  }
+  
+  .counter-button {
+    @apply w-16 h-16 text-2xl font-bold border-2 border-accent text-accent hover:bg-accent hover:text-black transition-all duration-200 flex items-center justify-center;
+    border-radius: var(--border-radius);
+  }
+  
+  .counter-button:active {
+    @apply scale-95;
+  }
+}
