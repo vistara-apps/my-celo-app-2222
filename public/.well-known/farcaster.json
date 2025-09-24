@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "My Celo App 2222",
+    "subtitle": "Built with Zara",
+    "description": "My Celo App 2222 is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://my-celo-app-2222.vercel.app",
+    "splashImageUrl": "https://my-celo-app-2222.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://my-celo-app-2222.vercel.app/image.png",
+    "tagline": "My Celo App 2222",
+    "screenshotUrls": [
+      "https://my-celo-app-2222.vercel.app/screenshot.png",
+      "https://my-celo-app-2222.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://my-celo-app-2222.vercel.app/api/webhook"
+  }
+}
